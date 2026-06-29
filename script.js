@@ -76,7 +76,6 @@ document.getElementById('share-btn').addEventListener('click', async () => {
       const file = new File([blob], '초대장.png', { type: 'image/png' });
       if (navigator.canShare && navigator.canShare({ files: [file] })) {
         await navigator.share({
-          title: '졸업전시회 초대장',
           files: [file],
         });
       } else {
