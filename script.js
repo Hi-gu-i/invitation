@@ -77,7 +77,6 @@ document.getElementById('share-btn').addEventListener('click', async () => {
       if (navigator.canShare && navigator.canShare({ files: [file] })) {
         await navigator.share({
           title: '졸업전시회 초대장',
-          text: `${displayName.textContent} 님을 초대합니다!`,
           files: [file],
         });
       } else {
