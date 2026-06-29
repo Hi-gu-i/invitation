@@ -163,7 +163,7 @@ body {
 
 .card-text {
   position: absolute;
-  top: 160px;
+  top: 120px;
   left: 30px;
   width: 306px;
   z-index: 3;
@@ -188,7 +188,7 @@ body {
 
 .invite-subtitle {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   color: #224A6B;
   letter-spacing: -0.36px;
   line-height: 26px;
