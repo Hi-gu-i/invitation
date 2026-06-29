@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>졸업전시회 초대장</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- 입력 화면 -->
+  <div id="input-screen" class="screen">
+    <img src="graphic.svg" class="bg-graphic" alt="">
+    <img src="node.svg" class="bg-node" alt="">
+    <div class="gradient-top"></div>
+    <div class="input-content">
+      <div class="form-group">
+        <label>받으시는 분</label>
+        <input type="text" id="name-input" placeholder="이름을 입력해 주세요." maxlength="10">
+      </div>
+      <div class="form-group">
+        <label>색상</label>
+        <div class="color-options">
+          <button class="color-btn active" data-theme="light">
+            <span class="color-circle circle-light"></span>
+          </button>
+          <button class="color-btn" data-theme="dark">
+            <span class="color-circle circle-dark"></span>
+          </button>
+        </div>
+      </div>
+      <button id="preview-btn">초대장 만들기</button>
+    </div>
+  </div>
+
+  <!-- 초대장 화면 -->
+  <div id="invitation-screen" class="screen hidden">
+        <img src="dark-bg.png" class="bg-dark-bg" alt="">
+    <div class="gradient-bottom"></div>
+    <img src="graphic.svg" class="bg-graphic" alt="">
+    <img src="dome.svg" class="bg-dome" alt="">
+    <img src="node.svg" class="bg-node" alt="">
+    <div class="gradient-top"></div>
+
+    <div class="card-text">
+      <div class="name-group">
+        <div class="name-line"><span id="display-name">이름</span> 님,</div>
+        <p class="invite-subtitle">서울여자대학교 첨단미디어디자인전공<br>제2회 졸업전시회에 초대합니다.</p>
+      </div>
+      <div class="info-grid">
+        <div class="info-row">
+          <span class="info-label">일자</span>
+          <span class="info-value">2026년 7월 17일(금) – 7월 19일(일)</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">시각</span>
+          <span class="info-value">오전 11시 – 오후 7시<br><span class="info-note">(*마지막 날은 오후 5시)</span></span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">장소</span>
+          <span class="info-value">서울 마포구 와우산로 25길 26,<br>홍대갤러리 키르큐펠</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">오프닝</span>
+          <span class="info-value">7월 17일 (금) 오후 12시</span>
+        </div>
+      </div>
+    </div>
+
+    <button id="back-btn" class="action-icon-btn">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <polyline points="1,4 1,10 7,10"/>
+        <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/>
+      </svg>
+      <span>다시제작</span>
+    </button>
+
+    <div class="action-right">
+      <button id="save-btn" class="action-icon-btn">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+          <polyline points="7 10 12 15 17 10"/>
+          <line x1="12" y1="15" x2="12" y2="3"/>
+        </svg>
+        <span>저장</span>
+      </button>
+      <button id="share-btn" class="action-icon-btn">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+          <polyline points="15 3 21 3 21 9"/>
+          <line x1="10" y1="14" x2="21" y2="3"/>
+        </svg>
+        <span>공유</span>
+      </button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
