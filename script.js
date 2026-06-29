@@ -29,8 +29,6 @@ previewBtn.addEventListener('click', () => {
   dome.src = selectedTheme === 'dark' ? 'dark-dome.svg' : 'dome.svg';
   const graphic = invitationScreen.querySelector('.bg-graphic');
   graphic.src = selectedTheme === 'dark' ? 'dark-graphic.svg' : 'graphic.svg';
-  const comment = document.getElementById('comment-img');
-  comment.src = selectedTheme === 'dark' ? 'dark-comment.png' : 'comment.png';
   inputScreen.classList.add('hidden');
   invitationScreen.classList.remove('hidden');
   window.scrollTo(0, 0);
