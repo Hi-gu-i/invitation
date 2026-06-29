@@ -91,7 +91,7 @@ body {
   background: #fafaf8;
   font-size: 17px;
   font-family: 'Pretendard', sans-serif;
-  color: #20212c;
+  color: #224A6B;
   outline: none;
   letter-spacing: -0.36px;
 }
@@ -189,7 +189,7 @@ body {
 .invite-subtitle {
   font-size: 18px;
   font-weight: 600;
-  color: #20212c;
+  color: #224A6B;
   letter-spacing: -0.36px;
   line-height: 26px;
 }
@@ -199,7 +199,7 @@ body {
   flex-direction: column;
   gap: 12px;
   font-size: 16px;
-  color: #20212c;
+  color: #224A6B;
   letter-spacing: -0.32px;
 }
 
@@ -234,7 +234,7 @@ body {
   font-size: 12px;
   font-family: 'Pretendard', sans-serif;
   font-weight: 500;
-  color: #20212c;
+  color: #224A6B;
   letter-spacing: -0.24px;
   width: 32px;
 }
@@ -289,4 +289,14 @@ body {
 
 #invitation-screen.theme-dark .gradient-bottom {
   display: block;
+}
+
+.card-comment {
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  max-width: 80%;
+  pointer-events: none;
 }
