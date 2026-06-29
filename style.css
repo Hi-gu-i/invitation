@@ -290,3 +290,7 @@ body {
 #invitation-screen.theme-dark .gradient-bottom {
   display: block;
 }
+
+.invite-sub2 {
+  margin-top: 8px;
+}
