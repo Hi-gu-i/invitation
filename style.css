@@ -175,7 +175,7 @@ body {
 .name-group {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
 }
 
 .name-line {
