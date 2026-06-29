@@ -291,13 +291,8 @@ body {
   display: block;
 }
 
-.invite-sub2 {
-  margin-top: -8px;
-}
-
-.invite-extra {
+.invite-paragraphs {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  margin-top: 8px;
+  gap: 8px;
 }
